@@ -1,0 +1,195 @@
+*{-webkit-box-sizing: border-box;box-sizing: border-box}
+body {
+    color: #333;
+}
+header {
+/*    height: 70px;*/
+    background: #f2f2f2;
+}
+
+header .row {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+img {
+    width: 100%;
+    max-width: 100%;
+}
+header a.logo .imgbx {
+    width: 60px;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+header .row .logo span:last-child {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+header .scial-link i {
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+}
+header .scial-link a {
+    display: inline-block;
+}
+
+header .scial-link a:hover i {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.5);
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.3), 0 3px 5px rgba(0,0,0,0.5);
+}
+section.banner {
+    background: url(img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 50vh;
+}
+section.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background: radial-gradient(#70185d, #2a1872);
+}
+section.banner .content {
+    width: 600px;
+    color: #fff;
+}
+ a.btn {
+    border-radius: 15px;
+    color: #fff;
+}
+
+ a.btn.btn-danger {
+    background: #ff6347;
+    border: 2px solid transparent;
+}
+ a.btn.btn-danger:hover {
+    background: transparent;
+    border-color: #ff6347;
+}
+a.btn.btn-outline-danger {
+    border: 2px solid #ff6347;
+}
+a.btn.btn-outline-danger:hover {
+    background-color: #ff6347;
+}
+section.services {
+    background: #ffffd1;
+}
+section.services .box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 32%;
+    padding: 10px;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+section.services .container .box:hover {
+    -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-color: #ff9c63;
+}
+section.services .row i {
+    color: tomato;
+    font-size: 2rem;
+    margin: 12px 0;
+}
+section.services .row h3 {
+    color: #d24e86;
+    font-size: 1.5rem;
+}
+section.article {
+    
+background: #eff7ff;
+}
+section.article .row .imgbx {
+/*    width: 47%;*/
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #b0b0b0;
+    background: #fff;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    -ms-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+    -o-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+}
+section.article .row {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+section.article .row.reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+}
+section.article .row.reverse a.btn.btn-outline-danger {
+    color: #333;
+}
+section.article a.btn.btn-danger:hover {
+    color: #333;
+}
+footer {
+    background: #250f3a;
+}
+
+/*responsive code*/ 
+@media (max-width: 989px) {
+    section.services .box {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    section.article .row {
+        text-align: center;
+    }
+    section.article .row .imgbx {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 362px) {
+    section.banner .content h1 {
+        font-size: 1.6rem;
+    }
+    section.banner .content .btns {
+        width: 170px;
+        margin: auto;
+    }
+    section.banner .content .btns a:first-child{
+        margin-bottom: 5px;
+    }
+}
+@media (max-width: 358px) {
+    section.banner .content h1 {
+        font-size: 1.3rem;
+    }
+    section.banner .content p {
+        font-size: 0.8rem;
+    }
+}
+@media (max-width: 283px) {
+    header .row {
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        margin-bottom: 10px;
+    }
+}
